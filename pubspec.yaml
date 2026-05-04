@@ -1,0 +1,57 @@
+name: jnanetra
+description: Jnanetra - AI Vision Assistant for the visually impaired
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # ML Inference
+  flutter_onnxruntime: ^1.3.0
+
+  # Camera
+  camera: ^0.10.6
+
+  # Permissions
+  permission_handler: ^11.4.0
+
+  # Audio feedback
+  flutter_tts: ^4.2.0
+
+  # Haptic feedback
+  vibration: ^2.1.0
+
+  # Image processing
+  image: ^4.2.0
+
+  # Keep screen awake
+  wakelock_plus: ^1.5.2
+
+  # Google Fonts (Lexend)
+  google_fonts: ^6.2.1
+
+  # State management
+  provider: ^6.1.2
+
+  # Navigation
+  go_router: ^14.6.2
+
+  cupertino_icons: ^1.0.8
+  speech_to_text: ^7.3.0
+  tflite_flutter: ^0.12.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.2
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/models/yolo11s.tflite
+    - assets/models/yolo11m.tflite
